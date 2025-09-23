@@ -8,7 +8,7 @@
 # Uso del Repo:
 1. Copiá la url de http del botón <>Code.
 2. En tu máquina, dentro de la carpeta donde queres que se clore el repo, tirá el comando:  `git clone http://github.com/PiaAchigarITBA/clas10_fullstack_react.git`
-3. Accedé a la carpeta : `cd my-app`
+3. Accedé a la carpeta : `cd clase10_fullstack_react`
 4. Corré el comando: `npm install`
 5. Levantá el servidor con el comando: `npm run dev`
 6. ¡Listo! Hacé las modificaciónes que quieras para ver como se modifican en tiempo real en el navegador.
