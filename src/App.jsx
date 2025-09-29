@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <ListaTareas />
+      
       <UserCard
       name="Juan Pérez" 
       email="juan@example.com" 
