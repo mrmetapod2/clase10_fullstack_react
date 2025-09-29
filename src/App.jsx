@@ -1,14 +1,14 @@
 import './App.css'
 import ListaTareas from './components/ListaTareas'
 import Producto from './components/Producto'
-import TarjetaUsuario from './components/TarjetaUsuario'
+import UserCard from './components/UserCard'
 
 function App() {
 
   return (
     <>
       <ListaTareas />
-      <TarjetaUsuario
+      <UserCard
       name="Juan Pérez" 
       email="juan@example.com" 
       age={28} 
