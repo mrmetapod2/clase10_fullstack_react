@@ -26,6 +26,14 @@ function App() {
         price={5000} 
         category="Accesorios" 
       />
+
+      <CustomButton 
+        btnText="Guardar" 
+        variant="primary"
+        size="large"
+        disabled={false}
+        onClick={() => alert("Guardado")}
+      />
     </>
   )
 }
