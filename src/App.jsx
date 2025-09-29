@@ -1,6 +1,7 @@
 import './App.css'
 import ListaTareas from './components/ListaTareas'
 import Producto from './components/Producto'
+import CustomButton from './components/CustomButton'
 
 function App() {
 
@@ -19,6 +20,14 @@ function App() {
         name="Mouse" 
         price={5000} 
         category="Accesorios" 
+      />
+
+      <CustomButton 
+        btnText="Guardar" 
+        variant="primary"
+        size="large"
+        disabled={false}
+        onClick={() => alert("Guardado")}
       />
     </>
   )
