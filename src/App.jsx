@@ -1,14 +1,13 @@
 import './App.css'
-import ListaTareas from './components/ListaTareas'
 import Producto from './components/Producto'
 import TarjetaUsuario from './components/TarjetaUsuario'
 import CustomButton from './components/CustomButton'
+import Counter from './components/Counter'
 
 function App() {
 
   return (
     <>
-      <ListaTareas />
       <TarjetaUsuario
       name="Juan Pérez" 
       email="juan@example.com" 
@@ -27,6 +26,8 @@ function App() {
         price={5000} 
         category="Accesorios" 
       />
+
+      <Counter />
 
       <CustomButton 
         btnText="Guardar" 
