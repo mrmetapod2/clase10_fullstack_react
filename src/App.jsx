@@ -2,6 +2,7 @@ import './App.css'
 import ListaTareas from './components/ListaTareas'
 import Producto from './components/Producto'
 import UserCard from './components/UserCard'
+import CustomButton from './components/CustomButton'
 
 function App() {
 
