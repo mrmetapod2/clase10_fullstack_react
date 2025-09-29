@@ -1,6 +1,6 @@
 import './App.css'
 import Producto from './components/Producto'
-import TarjetaUsuario from './components/TarjetaUsuario'
+import UserCard from './components/UserCard'
 import CustomButton from './components/CustomButton'
 import Counter from './components/Counter'
 
@@ -8,7 +8,8 @@ function App() {
 
   return (
     <>
-      <TarjetaUsuario
+      <ListaTareas />
+      <UserCard
       name="Juan Pérez" 
       email="juan@example.com" 
       age={28} 

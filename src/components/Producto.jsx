@@ -1,7 +1,7 @@
 import React from "react";
 import "../MisComponentes.css";
 
-function Producto({ name, price, discount, category }) {
+function UserCard({ name, price, discount, category }) {
   const discountedPrice = discount ? price * (1 - discount / 100) : price;
 
   return (
@@ -19,4 +19,4 @@ function Producto({ name, price, discount, category }) {
   );
 }
 
-export default Producto;
+export default UserCard;
