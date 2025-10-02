@@ -33,7 +33,7 @@ export default function Counter() {
         disabled={count === max}
       />
       <CustomButton
-        onClick={() => setCount(0)}
+        onClick={() => setCount(1)}
         btnText="Resetear"
         variant="primary"
         size="small"
