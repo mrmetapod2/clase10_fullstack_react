@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-function Auth( {usuario}) {
+function Auth({ usuario }) {
     const [loading, setLoading] = useState(false);
     const [logueado, setlogueado] = useState(false);
 
@@ -49,13 +49,16 @@ function Auth( {usuario}) {
                             </div>
                         </div>)
                         :
-                        (<form onSubmit={() => setlogueado(true)}>
+                        (<form onSubmit={() => setlogueado(true)} className='registration-form'>
                             <h2>Iniciar Sesion</h2>
-                            <label>Usuario</label>
-                            <input type='text' />
-                            <label>Contraseña</label>
-                            <input type='text' />
-                            <button type='submit'>Login</button>
+                            <div className='form-group'>
+                                <label>Usuario</label>
+                                <input type='text' />
+                                <label>Contraseña</label>
+                                <input type='text' />
+                                <button type='submit'>Login</button>
+                            </div>
+
                         </form>)
 
                 )
