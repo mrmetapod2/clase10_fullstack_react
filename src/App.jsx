@@ -31,7 +31,7 @@ function App() {
   return (
     <>
 
-      {/**<Counter/> */}
+      <Counter/> 
       <ListaTareas />
       <Auth usuario={usuarioEjemploAdmin} />
 
