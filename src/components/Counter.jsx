@@ -37,7 +37,7 @@ export default function Counter() {
         btnText="Resetear"
         variant="primary"
         size="small"
-        disabled={count === 0}
+        disabled={count === 1}
       />
     </div>
   );
