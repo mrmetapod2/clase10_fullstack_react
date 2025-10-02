@@ -1,5 +1,5 @@
 import React from "react";
-import "../MisComponentes.css";
+import "./ComponentesHook.css";
 
 function CustomButton({ btnText, variant, size, disabled, onClick }) {
 

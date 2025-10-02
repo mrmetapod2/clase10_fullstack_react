@@ -1,4 +1,4 @@
-import './App.css'
+
 import Producto from './components/Producto'
 import UserCard from './components/UserCard'
 import CustomButton from './components/CustomButton'
@@ -10,7 +10,7 @@ function App() {
     <>
       
       <Counter/>
-      <ListaTareas />
+     
       
     </>
   )

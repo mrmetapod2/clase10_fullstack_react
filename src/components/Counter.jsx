@@ -1,25 +1,43 @@
-import { useState } from 'react'
-import CustomButton from './CustomButton';
+import { useState, useEffect } from "react";
+import CustomButton from "./CustomButton";
 
 export default function Counter() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(1);
+  const min = 0;
+  const max = 10;
+
+  useEffect(() => {
+    if (count === min) {
+      alert("No se puede decrementar más");
+    }
+    if (count === max) {
+      alert("No se puede incrementar más");
+    }
+  }, [count]); 
+
   return (
-    <div>
-      <CustomButton onClick={() => count > 0 ? setCount((count) => count - 1) : alert("No se puede decrementar más")}
+    <div className="counter-controls">
+      <CustomButton
+        onClick={() => setCount((c) => Math.max(min, c - 1))}
         btnText="Decrementar"
         variant="danger"
         size="small"
-        disabled={false} />
-      <p>El contador está en {count}</p>
-      <CustomButton onClick={() => count < 10 ? setCount((count) => count + 1) : alert("No se puede incrementar más")}
+        disabled={count === min}
+      />
+      <p className="counter">El contador está en {count}</p>
+      <CustomButton
+        onClick={() => setCount((c) => Math.min(max, c + 1))}
         btnText="Incrementar"
         variant="primary"
         size="small"
-        disabled={false} />
-      <CustomButton onClick={() => setCount(0)}
+        disabled={count === max}
+      />
+      <CustomButton
+        onClick={() => setCount(0)}
         btnText="Resetear"
         variant="primary"
         size="small"
+        disabled={count === 0}
       />
     </div>
   );
