@@ -2,6 +2,7 @@
 import Producto from './components/Producto'
 import UserCard from './components/UserCard'
 import CustomButton from './components/CustomButton'
+import Gallery from './components/Gallery'
 import Counter from './components/Counter'
 import ListaTareas from './components/ListaTareas'
 import Auth from './components/Auth'
@@ -32,6 +33,7 @@ function App() {
     <>
 
       <Counter/> 
+      <Gallery />
       <ListaTareas />
       <Auth usuario={usuarioEjemploAdmin} />
 

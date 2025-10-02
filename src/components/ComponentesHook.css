@@ -234,3 +234,49 @@
   padding-top: 15px;
   border-top: 2px solid #ddd;
 }
+
+/* Gallery styles */
+.gallery {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.images-grid {
+  margin-top: 10px;
+}
+
+.image-card {
+  border: 1px solid #eee;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.like-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.like-btn[aria-pressed="true"] {
+  transform: scale(1.05);
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  background: #f0f0f0;
+  color: #333;
+  margin-top: 6px;
+}
+.popular-section h3 {
+  margin: 0 0 8px 0;
+}
