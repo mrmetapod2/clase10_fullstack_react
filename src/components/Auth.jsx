@@ -1,17 +1,8 @@
 import React, { useState } from 'react'
 
-function Auth() {
+function Auth( {usuario}) {
     const [loading, setLoading] = useState(false);
     const [logueado, setlogueado] = useState(false);
-
-    const usuarioEjemplo = {
-        nombre: 'Ana García',
-        email: 'ana@ejemplo.com',
-        rol: 'admin',
-        ultimoAcceso: '15/01/2024'
-    };
-    /*
-     */
 
     return (
         <div>
@@ -27,18 +18,18 @@ function Auth() {
                         (<div>
                             <div>
                                 <h2>Informacion personal</h2>
-                                <p>Nombre: {usuarioEjemplo.nombre}</p>
-                                <p>Email: {usuarioEjemplo.email}</p>
-                                <p>Rol: {usuarioEjemplo.rol}</p>
-                                <p>Ultimo acceso: {usuarioEjemplo.ultimoAcceso}</p>
+                                <p>Nombre: {usuario.nombre}</p>
+                                <p>Email: {usuario.email}</p>
+                                <p>Rol: {usuario.rol}</p>
+                                <p>Ultimo acceso: {usuario.ultimoAcceso}</p>
                             </div>
                             <div>
                                 <h2>Botones segun rol</h2>
-                                {(usuarioEjemplo.rol === "admin" || usuarioEjemplo.rol === "editor") ?
+                                {(usuario.rol === "admin" || usuario.rol === "editor") ?
                                     (
                                         <div>
                                             <button>Gestionar contenido</button>
-                                            {usuarioEjemplo.rol === "admin" ?
+                                            {usuario.rol === "admin" ?
                                                 (<div>
                                                     <button>Panel de Administración</button>
                                                 </div>) :
