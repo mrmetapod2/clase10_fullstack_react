@@ -5,7 +5,7 @@ function CustomButton({ btnText, variant, size, disabled, onClick }) {
 
     return (
         <button
-            className={`btn btn-${variant} btn-${size}`}
+            //className={`btn btn-${variant} btn-${size}`}
             disabled={disabled}
             onClick={onClick}
         >
